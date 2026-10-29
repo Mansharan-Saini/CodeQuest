@@ -1,0 +1,15 @@
+# Generated Windows executables
+*.exe
+
+# Local player progress may contain personal names and scores
+players.txt
+
+# Compiler and IDE output
+*.o
+*.obj
+*.dll
+*.pdb
+*.ilk
+*.log
+.vs/
+.vscode/ipch/

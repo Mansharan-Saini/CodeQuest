@@ -1,0 +1,99 @@
+# CodeQuest question bank
+# Format: CATEGORY|DIFFICULTY|TOPIC|QUESTION|CORRECT|WRONG1|WRONG2|WRONG3
+#   CATEGORY = C or CPP, DIFFICULTY = 1 (easy) 2 (medium) 3 (hard)
+#   The FIRST option is the correct one; the game shuffles the options. Do not use '|' inside text.
+#
+# ---------------------------------------------------------------- C
+C|1|C Basics|Which header file declares printf in C?|stdio.h|stdlib.h|string.h|math.h
+C|1|C Basics|What is the entry point of every C program?|main()|start()|begin()|run()
+C|1|C Basics|Which format specifier prints an int with printf?|%d|%f|%c|%s
+C|1|C Basics|What is the result of 7 / 2 when both operands are int?|3|3.5|4|2
+C|1|C Basics|Which symbol terminates a statement in C?|; (semicolon)|: (colon)|. (period)|, (comma)
+C|1|C Basics|Which data type is best for storing a single character?|char|string|text|byte
+C|2|C Basics|Which keyword makes a local variable keep its value between function calls?|static|const|extern|volatile
+C|2|C Basics|What does printf("%d", 'A'); print on an ASCII system?|65|A|97|Compilation error
+C|2|C Basics|Which keyword prevents a variable from being modified after initialisation?|const|static|register|extern
+C|2|C Basics|What is the value of 10 % 4?|2|2.5|0|4
+C|3|C Basics|On a system with 4-byte int, what does printf("%d", sizeof(int) * 2 > 7); print?|1|0|8|7
+C|3|C Basics|In C99 and later, what does -7 / 2 evaluate to?|-3|-4|-3.5|It is undefined
+C|3|C Basics|What is the purpose of the volatile qualifier?|Tells the compiler the value may change unexpectedly so accesses must not be optimised away|Makes the variable constant|Stores the variable in a CPU register|Makes the variable thread-safe automatically
+C|1|Conditions and Loops|Which loop always executes its body at least once?|do-while|while|for|if
+C|1|Conditions and Loops|Which statement immediately exits the nearest enclosing loop?|break|continue|skip|pass
+C|1|Conditions and Loops|Which operator is the logical AND in C?|&&|&|and|AND
+C|1|Conditions and Loops|Which statement skips to the next iteration of a loop?|continue|break|next|skip
+C|2|Conditions and Loops|What does for(int i = 0; i < 3; i++) printf("%d", i); print?|012|123|0123|321
+C|2|Conditions and Loops|What happens in a switch if a case has no break?|Execution falls through into the next case|A compile error occurs|The program exits|Only the default case runs
+C|2|Conditions and Loops|What does if (x = 5) do?|Assigns 5 to x and the condition is true|Compares x with 5|Causes a compile error|Is always false
+C|3|Conditions and Loops|What does int i = 0; while (i++ < 3); printf("%d", i); print?|4|3|0|It loops forever
+C|3|Conditions and Loops|What does int a = 5; printf("%d", a > 3 ? a < 10 ? 1 : 2 : 3); print?|1|2|3|5
+C|1|Arrays and Strings|What is the index of the first element of a C array?|0|1|-1|It depends on the array size
+C|1|Arrays and Strings|Which function returns the length of a C string?|strlen()|length()|size()|strcount()
+C|1|Arrays and Strings|Which character marks the end of a C string?|'\0'|'\n'|' '|EOF
+C|2|Arrays and Strings|Given int a[5] = {1, 2}; what is a[4]?|0|1|2|A garbage value
+C|2|Arrays and Strings|Which function compares two C strings?|strcmp()|strcomp()|compare()|equals()
+C|2|Arrays and Strings|What does sizeof(arr) / sizeof(arr[0]) compute for an array?|The number of elements|The size in bytes|The last valid index|The address of the array
+C|3|Arrays and Strings|What does sizeof(s) return for char s[] = "hello";?|6|5|4|8
+C|3|Arrays and Strings|What happens with char *p = "hi"; p[0] = 'H';?|Undefined behaviour because string literals are read-only|p becomes "Hi"|A compile error|Nothing, the write is silently ignored
+C|1|Functions|Which keyword sends a value back from a function?|return|give|send|yield
+C|1|Functions|Which return type means a function returns no value?|void|null|none|empty
+C|2|Functions|How are arguments passed to functions in C by default?|By value|By reference|By name|By pointer always
+C|2|Functions|What is a function prototype?|A declaration of name, return type and parameters before the definition|The body of a function|A kind of macro|A header file
+C|3|Functions|What happens if a recursive function has no base case?|Stack overflow|The compiler rejects it|It returns 0|It runs forever using no memory
+C|3|Functions|What is true of static int count = 0; declared inside a function?|It is initialised once and keeps its value between calls|It is reset on every call|It is stored on the stack|It is visible to all other functions
+C|1|Pointers|Which operator gives the address of a variable?|&|*|->|%
+C|1|Pointers|Which operator dereferences a pointer?|*|&|::|.
+C|1|Pointers|What does int *p; declare?|A pointer to int|An int named p|An array of int|A function returning int
+C|2|Pointers|What does int a = 10; int *p = &a; printf("%d", *p); print?|10|The address of a|0|Nothing, it fails to compile
+C|2|Pointers|Which function allocates memory dynamically in C?|malloc()|new|alloc_mem()|create()
+C|2|Pointers|Which function releases memory obtained with malloc()?|free()|delete|release()|dispose()
+C|2|Pointers|What is a NULL pointer?|A pointer that points to no valid object|A pointer to the value 0|An uninitialised pointer|A pointer to void
+C|3|Pointers|Given int a[3] = {1, 2, 3}; int *p = a; what is *(p + 2)?|3|2|1|The address of a[2]
+C|3|Pointers|What is a dangling pointer?|A pointer to memory that has been freed or gone out of scope|A pointer set to NULL|A pointer to another pointer|A pointer to a function
+C|3|Pointers|What does a void * pointer mean?|A generic pointer that must be cast before dereferencing|A pointer to nothing|A NULL pointer|A function pointer
+C|3|Pointers|What is int **pp?|A pointer to a pointer to int|Two int variables|A pointer to an array of 2 ints|Invalid syntax
+# ---------------------------------------------------------------- C++
+CPP|1|C++ Basics|Which statement prints text to the console in C++?|std::cout << "Hi";|std::cin << "Hi";|print("Hi");|cout >> "Hi";
+CPP|1|C++ Basics|Which header is needed to use std::cout?|<iostream>|<stdio.h>|<conio.h>|<fstream>
+CPP|1|C++ Basics|Which symbol declares a reference variable in C++?|&|*|@|#
+CPP|1|C++ Basics|Which of these is a valid C++ boolean literal?|true|TRUE|yes|1b
+CPP|2|C++ Basics|What type does auto x = 3.5; deduce for x?|double|float|int|long
+CPP|2|C++ Basics|What is the purpose of a namespace?|To avoid name collisions|To speed up the program|To allocate memory|To loop over data
+CPP|2|C++ Basics|What does std::string s = "ab"; s += "cd"; leave in s?|abcd|ab cd|cdab|A compile error
+CPP|2|C++ Basics|Which operator reads input from the keyboard with cin?|>>|<<|==|->
+CPP|3|C++ Basics|After int x = 5; int &r = x; r = 10; what is x?|10|5|Undefined|The code does not compile
+CPP|3|C++ Basics|What does std::endl do besides inserting a newline?|Flushes the output buffer|Clears the screen|Ends the program|Nothing else
+CPP|3|C++ Basics|What is the difference between nullptr and NULL?|nullptr is a type-safe null pointer literal|They are identical|nullptr is only for arrays|NULL exists only in C++11
+CPP|1|Advanced C++|Which STL container is a dynamic array?|vector|list|set|map
+CPP|1|Advanced C++|Which vector function adds an element at the end?|push_back()|add()|append()|insert_end()
+CPP|2|Advanced C++|Which STL container stores unique elements in sorted order?|set|vector|deque|stack
+CPP|2|Advanced C++|Which header provides std::sort?|<algorithm>|<sort>|<vector>|<utility>
+CPP|2|Advanced C++|What is template<typename T> used for?|Writing generic code that works with many types|Declaring a class hierarchy|Handling exceptions|Defining macros
+CPP|2|Advanced C++|What does m["a"] do on a std::map<std::string, int> m when "a" is missing?|Inserts the key with value 0 and returns a reference|Throws an exception|Returns -1|Is undefined behaviour
+CPP|2|Advanced C++|Which keyword raises an exception in C++?|throw|raise|error|except
+CPP|3|Advanced C++|What does std::unique_ptr guarantee?|Sole ownership; the object is deleted automatically when the pointer is destroyed|Shared ownership with reference counting|That the pointer is never null|Garbage collection of cycles
+CPP|3|Advanced C++|What does vector<int> v(3, 7); cout << v.size() << v[0]; print?|37|73|21|10
+CPP|3|Advanced C++|What does std::move actually do?|Casts its argument to an rvalue reference to enable move semantics|Copies the object|Deletes the object|Swaps two objects
+CPP|3|Advanced C++|In the lambda [&](int x) { return x + y; } how is y captured?|By reference|By value|It is not captured|By move
+CPP|3|Advanced C++|What does RAII mean in practice?|Resources are acquired in constructors and released in destructors|Random access is initialised immediately|All instructions run in parallel|Reference arrays in iterators
+CPP|1|Object-Oriented Programming|What is an object?|An instance of a class|A function|A header file|A loop
+CPP|1|Object-Oriented Programming|What is the default access level of members in a C++ class?|private|public|protected|none
+CPP|1|Object-Oriented Programming|What is a constructor?|A member function that initialises a new object|A function that destroys an object|A friend function|A static variable
+CPP|1|Object-Oriented Programming|Which OOP concept bundles data and methods and hides internal details?|Encapsulation|Inheritance|Overloading|Recursion
+CPP|2|Object-Oriented Programming|Which symbol prefixes the name of a destructor?|~|!|#|&
+CPP|2|Object-Oriented Programming|How do you publicly derive class B from class A?|class B : public A|class B extends A|class B inherits A|class B -> A
+CPP|2|Object-Oriented Programming|What is function overloading?|Several functions with the same name but different parameter lists|Redefining a base class function in a derived class|Calling a function from itself|Inlining a function
+CPP|2|Object-Oriented Programming|What does the this pointer refer to inside a member function?|The object the function was called on|The base class|The next object in memory|The class itself
+CPP|2|Object-Oriented Programming|What is the default access level of members in a struct?|public|private|protected|none
+CPP|2|Object-Oriented Programming|What does a static data member of a class mean?|One copy is shared by all objects of the class|Each object has its own copy|It cannot be changed|It exists only inside constructors
+CPP|2|Object-Oriented Programming|What does declaring a function as a friend of a class allow?|It can access the class's private members|It inherits from the class|It becomes static|It becomes public
+CPP|3|Object-Oriented Programming|Which keyword enables runtime polymorphism for a member function?|virtual|static|inline|friend
+CPP|3|Object-Oriented Programming|What is a pure virtual function?|A virtual function declared with = 0 that makes the class abstract|A virtual function with an empty body|A static virtual function|A function marked final
+CPP|3|Object-Oriented Programming|Why should a base class destructor usually be virtual?|So deleting a derived object through a base pointer runs the derived destructor|It makes the program faster|Constructors require it|It prevents inheritance
+CPP|3|Object-Oriented Programming|What does the override specifier do?|Makes the compiler check that the function really overrides a base virtual function|Turns a function into a virtual function|Hides the base function|Deletes the base function
+CPP|3|Object-Oriented Programming|What is object slicing?|Copying a derived object into a base object loses the derived part|Splitting an array into pieces|Deleting part of an object|Cutting a string in half
+CPP|3|Object-Oriented Programming|When is a copy constructor called?|When a new object is initialised from an existing object of the same class|When assigning to an existing object|Only when using pointers|Only when passing references
+CPP|3|Object-Oriented Programming|In what order are constructors called in inheritance?|Base class first, then derived class|Derived class first, then base class|In random order|Only the derived constructor runs
+CPP|3|Object-Oriented Programming|What does the final keyword on a class do?|Prevents the class from being inherited|Prevents it from being instantiated|Makes it abstract|Makes all members virtual
+CPP|3|Object-Oriented Programming|What does the Rule of Three say?|If you define a destructor, copy constructor or copy assignment you probably need all three|A class needs exactly three constructors|A class may have three base classes|There are three access specifiers
+CPP|3|Object-Oriented Programming|Which operator cannot be overloaded in C++?|:: (scope resolution)|+|==|[]
+CPP|3|Object-Oriented Programming|What happens when a virtual function is called inside a base class constructor?|The base class version runs, not the derived override|The derived override runs|A compile error occurs|The program always crashes

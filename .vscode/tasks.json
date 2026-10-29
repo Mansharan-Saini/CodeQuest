@@ -1,0 +1,53 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "CodeQuest: Build",
+            "command": "g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-std=c++17",
+                "-municode",
+                "${workspaceFolder}\\main.cpp",
+                "${workspaceFolder}\\Question.cpp",
+                "${workspaceFolder}\\Player.cpp",
+                "${workspaceFolder}\\Quiz.cpp",
+                "${workspaceFolder}\\Leaderboard.cpp",
+                "-o",
+                "${workspaceFolder}\\codequest.exe",
+                "-mwindows"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Build the CodeQuest Windows desktop game."
+        },
+        {
+            "type": "process",
+            "label": "CodeQuest: Run",
+            "command": "${workspaceFolder}\\codequest.exe",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "CodeQuest: Build and Run",
+            "dependsOn": [
+                "CodeQuest: Build",
+                "CodeQuest: Run"
+            ],
+            "dependsOrder": "sequence",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ],
+    "version": "2.0.0"
+}
