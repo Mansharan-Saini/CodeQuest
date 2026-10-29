@@ -30,7 +30,7 @@ Then launch `codequest.exe`. Keep `questions.txt` beside the executable.
 | `Quiz.h/.cpp` | Original console quiz engine and its full quiz modes |
 | `Leaderboard.h/.cpp` | Loads and saves players and ranks them by XP |
 | `questions.txt` | Question bank |
-| `players.txt` | Saved player progress (created/updated by the game) |
+| `players.txt` | Local saved player progress (created/updated by the game; excluded from Git) |
 | `.vscode/tasks.json` | VS Code build and run tasks |
 
 ## How to play
